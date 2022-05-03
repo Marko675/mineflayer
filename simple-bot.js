@@ -13,10 +13,8 @@ const botArgs = {
 };
 
 const initBot = () => {
-
-    let bot = mineflayer.createBot(botArgs);
-
-    bot.loadPlugin(pathfinder);
+    
+    const bot = mineflayer.createBot(botArgs);
 
     bot.once('login', async() => {
         let botSocket = bot._client.socket;
@@ -39,6 +37,10 @@ const initBot = () => {
         console.log('Spawned in skyblock');
         await bot.waitForTicks(50);
     });
+
+    setInterval(function() {
+        bot.chat('/server skyblock')
+    }, 120 * 1000);
 
     bot.on('message', (message) => {
         console.log(message.toAnsi())

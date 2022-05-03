@@ -25,7 +25,8 @@
     "caller": "^1.0.1",
     "chalk": "^4.1.2",
     "mineflayer": "^4.3.0",
-    "mineflayer-pathfinder": "^2.1.1"
+    "mineflayer-pathfinder": "^2.1.1",
+    "socks5-client": "^1.2.8"
   },
   "peerDependencies": {
     "ws": "^7.5.1"
