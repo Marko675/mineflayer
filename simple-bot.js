@@ -22,7 +22,7 @@ const initBot = () => {
     });
 
     bot.on('end', () => {
-        console.log(`Disconnected`);
+        console.log(`disconnected`);
         setTimeout(initBot, 5000);
     });
 
